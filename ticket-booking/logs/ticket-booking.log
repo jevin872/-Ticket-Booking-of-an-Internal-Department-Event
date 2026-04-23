@@ -1,0 +1,450 @@
+2026-04-23T13:21:35.491+05:30  INFO 44728 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication using Java 25.0.2 with PID 44728 (D:\project_fullstack\Ticket\ticket-booking\target\classes started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:21:35.495+05:30  INFO 44728 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:21:36.150+05:30  INFO 44728 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:21:36.196+05:30  INFO 44728 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:21:36.706+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:21:36.717+05:30  INFO 44728 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:21:36.718+05:30  INFO 44728 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:21:36.760+05:30  INFO 44728 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:21:36.762+05:30  INFO 44728 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2026-04-23T13:21:36.981+05:30  INFO 44728 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:21:37.010+05:30  INFO 44728 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:21:37.031+05:30  INFO 44728 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:21:37.208+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:21:37.227+05:30  INFO 44728 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:21:37.339+05:30  INFO 44728 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:21:37.339+05:30  INFO 44728 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:21:37.353+05:30  WARN 44728 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:21:37.364+05:30  INFO 44728 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:21:38.208+05:30  INFO 44728 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:21:38.281+05:30  INFO 44728 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:21:38.616+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:21:40.577+05:30  WARN 44728 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:21:40.841+05:30  WARN 44728 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:21:41.331+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:21:41.915+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:21:42.054+05:30  INFO 44728 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:21:42.068+05:30  INFO 44728 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 6.897 seconds (process running for 7.192)
+2026-04-23T13:21:42.588+05:30  INFO 44728 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:21:42.877+05:30  INFO 44728 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:24:44.840+05:30  INFO 44728 --- [ticket-booking-system] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:24:44.840+05:30  INFO 44728 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:24:44.843+05:30  INFO 44728 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-23T13:24:46.005+05:30  WARN 44728 --- [ticket-booking-system] [http-nio-8081-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-23T13:24:47.775+05:30 ERROR 44728 --- [ticket-booking-system] [task-1] com.ticketbooking.service.EmailService   : Failed to send verification email to john@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d2e1a72fcca58-82f94204ac8sm18431857b3a.0 - gsmtp
+
+2026-04-23T13:24:47.940+05:30 ERROR 44728 --- [ticket-booking-system] [task-3] com.ticketbooking.service.EmailService   : Failed to send verification email to jane@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d2e1a72fcca58-82f8ebe68ebsm21884174b3a.47 - gsmtp
+
+2026-04-23T13:33:00.398+05:30  INFO 17620 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication v1.0.0 using Java 25.0.2 with PID 17620 (D:\project_fullstack\Ticket\ticket-booking\target\ticket-booking-1.0.0.jar started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:33:00.401+05:30  INFO 17620 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:33:01.487+05:30  INFO 17620 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:33:01.545+05:30  INFO 17620 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:33:02.355+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:33:02.368+05:30  INFO 17620 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:33:02.370+05:30  INFO 17620 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:33:02.400+05:30  INFO 17620 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:33:02.400+05:30  INFO 17620 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
+2026-04-23T13:33:02.789+05:30  INFO 17620 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:33:02.868+05:30  INFO 17620 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:33:02.912+05:30  INFO 17620 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:33:03.255+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:33:03.277+05:30  INFO 17620 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:33:03.480+05:30  INFO 17620 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:33:03.482+05:30  INFO 17620 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:33:03.502+05:30  WARN 17620 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:33:03.516+05:30  INFO 17620 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:33:04.428+05:30  INFO 17620 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:33:04.481+05:30  INFO 17620 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:33:04.917+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:33:06.108+05:30  WARN 17620 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:33:06.359+05:30  WARN 17620 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:33:06.796+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:33:07.239+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:33:07.322+05:30  INFO 17620 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:33:07.333+05:30  INFO 17620 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 7.417 seconds (process running for 7.849)
+2026-04-23T13:33:07.710+05:30  INFO 17620 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:33:07.909+05:30  INFO 17620 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:34:05.737+05:30  INFO 17620 --- [ticket-booking-system] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:34:05.737+05:30  INFO 17620 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:34:05.738+05:30  INFO 17620 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T13:34:06.709+05:30  WARN 17620 --- [ticket-booking-system] [http-nio-8081-exec-5] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-23T13:34:08.448+05:30 ERROR 17620 --- [ticket-booking-system] [task-1] com.ticketbooking.service.EmailService   : Failed to send verification email to john@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d2e1a72fcca58-82f8e9d35acsm20061192b3a.15 - gsmtp
+
+2026-04-23T13:34:08.481+05:30 ERROR 17620 --- [ticket-booking-system] [task-3] com.ticketbooking.service.EmailService   : Failed to send verification email to jane@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d9443c01a7336-2b5fab30f29sm185018835ad.68 - gsmtp
+
+2026-04-23T13:37:16.451+05:30  INFO 39392 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication v1.0.0 using Java 25.0.2 with PID 39392 (D:\project_fullstack\Ticket\ticket-booking\target\ticket-booking-1.0.0.jar started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:37:16.453+05:30  INFO 39392 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:37:17.333+05:30  INFO 39392 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:37:17.381+05:30  INFO 39392 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:37:18.087+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:37:18.098+05:30  INFO 39392 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:37:18.098+05:30  INFO 39392 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:37:18.126+05:30  INFO 39392 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:37:18.127+05:30  INFO 39392 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1635 ms
+2026-04-23T13:37:18.414+05:30  INFO 39392 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:37:18.458+05:30  INFO 39392 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:37:18.495+05:30  INFO 39392 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:37:18.695+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:37:18.715+05:30  INFO 39392 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:37:18.892+05:30  INFO 39392 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:37:18.893+05:30  INFO 39392 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:37:18.915+05:30  WARN 39392 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:37:18.933+05:30  INFO 39392 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:37:19.940+05:30  INFO 39392 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:37:20.007+05:30  INFO 39392 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:37:20.393+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:37:21.888+05:30  WARN 39392 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:37:22.280+05:30  WARN 39392 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:37:22.832+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:37:23.340+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:37:23.451+05:30  INFO 39392 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:37:23.466+05:30  INFO 39392 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 7.392 seconds (process running for 7.723)
+2026-04-23T13:37:23.932+05:30  INFO 39392 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:37:24.149+05:30  INFO 39392 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:37:33.102+05:30  INFO 39392 --- [ticket-booking-system] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:37:33.103+05:30  INFO 39392 --- [ticket-booking-system] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:37:33.103+05:30  INFO 39392 --- [ticket-booking-system] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-23T13:37:34.047+05:30  WARN 39392 --- [ticket-booking-system] [http-nio-8081-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-23T13:37:35.066+05:30 ERROR 39392 --- [ticket-booking-system] [http-nio-8081-exec-7] c.t.exception.GlobalExceptionHandler     : Unhandled exception: password cannot be more than 72 bytes | Request: uri=/api/auth/login
+
+java.lang.IllegalArgumentException: password cannot be more than 72 bytes
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:615) ~[spring-security-crypto-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:603) ~[spring-security-crypto-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:593) ~[spring-security-crypto-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:110) ~[spring-security-crypto-6.4.4.jar!/:6.4.4]
+	at com.ticketbooking.service.AuthService.login(AuthService.java:114) ~[!/:1.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar!/:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar!/:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar!/:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar!/:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar!/:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar!/:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar!/:6.2.5]
+	at com.ticketbooking.service.AuthService$$SpringCGLIB$$0.login(<generated>) ~[!/:1.0.0]
+	at com.ticketbooking.controller.AuthController.login(AuthController.java:43) ~[!/:1.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at com.ticketbooking.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:38) ~[!/:1.0.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.4.jar!/:6.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-23T13:37:35.763+05:30 ERROR 39392 --- [ticket-booking-system] [task-1] com.ticketbooking.service.EmailService   : Failed to send verification email to john@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d2e1a72fcca58-82f8e9819e5sm20286354b3a.2 - gsmtp
+
+2026-04-23T13:37:35.809+05:30 ERROR 39392 --- [ticket-booking-system] [task-3] com.ticketbooking.service.EmailService   : Failed to send verification email to jane@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d9443c01a7336-2b5faa176e9sm184096365ad.20 - gsmtp
+
+2026-04-23T13:39:02.572+05:30  INFO 41332 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication v1.0.0 using Java 25.0.2 with PID 41332 (D:\project_fullstack\Ticket\ticket-booking\target\ticket-booking-1.0.0.jar started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:39:02.573+05:30  INFO 41332 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:39:03.599+05:30  INFO 41332 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:39:03.668+05:30  INFO 41332 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:39:04.586+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:39:04.601+05:30  INFO 41332 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:39:04.602+05:30  INFO 41332 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:39:04.634+05:30  INFO 41332 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:39:04.634+05:30  INFO 41332 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2012 ms
+2026-04-23T13:39:05.002+05:30  INFO 41332 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:39:05.057+05:30  INFO 41332 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:39:05.092+05:30  INFO 41332 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:39:05.330+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:39:05.354+05:30  INFO 41332 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:39:05.523+05:30  INFO 41332 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:39:05.525+05:30  INFO 41332 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:39:05.547+05:30  WARN 41332 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:39:05.568+05:30  INFO 41332 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:39:06.498+05:30  INFO 41332 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:39:06.557+05:30  INFO 41332 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:39:06.954+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:39:08.225+05:30  WARN 41332 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:39:08.458+05:30  WARN 41332 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:39:08.905+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:39:09.363+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:39:09.479+05:30  INFO 41332 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:39:09.493+05:30  INFO 41332 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 7.36 seconds (process running for 7.787)
+2026-04-23T13:39:09.905+05:30  INFO 41332 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:39:10.117+05:30  INFO 41332 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:39:21.236+05:30  INFO 41332 --- [ticket-booking-system] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:39:21.237+05:30  INFO 41332 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:39:21.238+05:30  INFO 41332 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T13:39:22.250+05:30  WARN 41332 --- [ticket-booking-system] [http-nio-8081-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-23T13:39:23.356+05:30 ERROR 41332 --- [ticket-booking-system] [http-nio-8081-exec-9] c.t.security.JwtAuthenticationFilter     : JWT authentication error: Invalid compact JWT string: Compact JWSs must contain exactly 2 period characters, and compact JWEs must contain exactly 4.  Found: 0
+2026-04-23T13:39:23.388+05:30 ERROR 41332 --- [ticket-booking-system] [http-nio-8081-exec-1] c.t.security.JwtAuthenticationFilter     : JWT authentication error: Invalid compact JWT string: Compact JWSs must contain exactly 2 period characters, and compact JWEs must contain exactly 4.  Found: 0
+2026-04-23T13:39:23.948+05:30 ERROR 41332 --- [ticket-booking-system] [task-1] com.ticketbooking.service.EmailService   : Failed to send verification email to john@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 41be03b00d2f7-c797703ddf8sm14905697a12.28 - gsmtp
+
+2026-04-23T13:39:24.018+05:30 ERROR 41332 --- [ticket-booking-system] [task-3] com.ticketbooking.service.EmailService   : Failed to send verification email to jane@college.edu: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. d2e1a72fcca58-82f8e981992sm23468753b3a.7 - gsmtp
+
+2026-04-23T13:46:09.139+05:30  INFO 16848 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication v1.0.0 using Java 25.0.2 with PID 16848 (D:\project_fullstack\Ticket\ticket-booking\target\ticket-booking-1.0.0.jar started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:46:09.141+05:30  INFO 16848 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:46:10.107+05:30  INFO 16848 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:46:10.174+05:30  INFO 16848 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:46:11.020+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:46:11.031+05:30  INFO 16848 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:46:11.031+05:30  INFO 16848 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:46:11.057+05:30  INFO 16848 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:46:11.057+05:30  INFO 16848 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1870 ms
+2026-04-23T13:46:11.419+05:30  INFO 16848 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:46:11.467+05:30  INFO 16848 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:46:11.506+05:30  INFO 16848 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:46:11.820+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:46:11.854+05:30  INFO 16848 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:46:12.086+05:30  INFO 16848 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:46:12.089+05:30  INFO 16848 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:46:12.116+05:30  WARN 16848 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:46:12.143+05:30  INFO 16848 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:46:13.445+05:30  INFO 16848 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:46:13.534+05:30  INFO 16848 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:46:14.136+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:46:16.118+05:30  WARN 16848 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:46:16.710+05:30  WARN 16848 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:46:17.515+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:46:18.283+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:46:18.440+05:30  INFO 16848 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:46:18.457+05:30  INFO 16848 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 9.794 seconds (process running for 10.222)
+2026-04-23T13:46:18.949+05:30  INFO 16848 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:46:19.170+05:30  INFO 16848 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:47:44.876+05:30  INFO 16848 --- [ticket-booking-system] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:47:44.876+05:30  INFO 16848 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:47:44.878+05:30  INFO 16848 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T13:47:45.079+05:30  WARN 16848 --- [ticket-booking-system] [http-nio-8081-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-23T13:51:30.905+05:30  INFO 5740 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Starting TicketBookingApplication v1.0.0 using Java 25.0.2 with PID 5740 (D:\project_fullstack\Ticket\ticket-booking\target\ticket-booking-1.0.0.jar started by ADMIN in D:\project_fullstack\Ticket\ticket-booking)
+2026-04-23T13:51:30.907+05:30  INFO 5740 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T13:51:32.068+05:30  INFO 5740 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-23T13:51:32.143+05:30  INFO 5740 --- [ticket-booking-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 6 JPA repository interfaces.
+2026-04-23T13:51:33.044+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-23T13:51:33.057+05:30  INFO 5740 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T13:51:33.058+05:30  INFO 5740 --- [ticket-booking-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-23T13:51:33.089+05:30  INFO 5740 --- [ticket-booking-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-23T13:51:33.091+05:30  INFO 5740 --- [ticket-booking-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2122 ms
+2026-04-23T13:51:33.536+05:30  INFO 5740 --- [ticket-booking-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-23T13:51:33.601+05:30  INFO 5740 --- [ticket-booking-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-23T13:51:33.636+05:30  INFO 5740 --- [ticket-booking-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-23T13:51:33.888+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-23T13:51:33.925+05:30  INFO 5740 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-23T13:51:34.084+05:30  INFO 5740 --- [ticket-booking-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ticket_booking_db user=SA
+2026-04-23T13:51:34.085+05:30  INFO 5740 --- [ticket-booking-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-23T13:51:34.103+05:30  WARN 5740 --- [ticket-booking-system] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-23T13:51:34.119+05:30  INFO 5740 --- [ticket-booking-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-23T13:51:35.086+05:30  INFO 5740 --- [ticket-booking-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-23T13:51:35.150+05:30  INFO 5740 --- [ticket-booking-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-23T13:51:35.564+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-23T13:51:37.164+05:30  WARN 5740 --- [ticket-booking-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-23T13:51:37.510+05:30  WARN 5740 --- [ticket-booking-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-23T13:51:38.079+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-23T13:51:38.646+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ticket_booking_db'
+2026-04-23T13:51:38.767+05:30  INFO 5740 --- [ticket-booking-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2026-04-23T13:51:38.781+05:30  INFO 5740 --- [ticket-booking-system] [main] c.t.TicketBookingApplication             : Started TicketBookingApplication in 8.369 seconds (process running for 8.836)
+2026-04-23T13:51:39.255+05:30  INFO 5740 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Default admin created: admin@college.edu / Admin@1234
+2026-04-23T13:51:39.477+05:30  INFO 5740 --- [ticket-booking-system] [main] c.ticketbooking.config.DataInitializer   : Demo organizer created: organizer@college.edu / Org@12345
+2026-04-23T13:52:12.583+05:30  INFO 5740 --- [ticket-booking-system] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T13:52:12.584+05:30  INFO 5740 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T13:52:12.586+05:30  INFO 5740 --- [ticket-booking-system] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T13:52:12.823+05:30  WARN 5740 --- [ticket-booking-system] [http-nio-8081-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
